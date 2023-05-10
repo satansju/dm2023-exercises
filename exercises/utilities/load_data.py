@@ -211,7 +211,7 @@ def load_city_tour():
         cities = [l.strip().split(',') for l in f if ('--' not in l) and ('#' not in l)]
     
     n = len(cities)
-    distances = np.zeros((n, n), dtype=np.float32)
+    distances = np.zeros((n, n), dtype=np.float)
     prev = 0.
     
     for i, (city, distance) in enumerate(cities):
